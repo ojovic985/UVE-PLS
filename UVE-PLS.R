@@ -1,4 +1,4 @@
-A1<-read.table("B:\\Ozren\\Clanak_3_siramesine\\PLS\\ERG2_44_lit_uz_without_NaN_from_GOLD.txt")
+A1<-read.table("ERG2_44_lit_uz_without_NaN_from_GOLD.txt")
 B2<-c(5.7, 5.5, 7.19, 5.15, 4.78, 5, 7.21, 5.92, 6.8, 4.5, 9.3, 7.19, 10.3, 8.3, 9, 5.33, 6.3, 6.51, 4, 5.55, 9.15, 6.63, 9.4, 6, 6.55, 5.35, 7.77, 8.05, 7.89, 4.3, 5.82, 7.18, 4, 5.93, 5.11, 8.7, 5.72, 10.05, 6.3, 9.82, 9.7, 6.77, 8.7, 6.41)
 
 pon<-150
@@ -35,7 +35,7 @@ for (i in length(vectvoid):1) {
 Fe<-Fe[,-vectvoid[i]]
 F<-F[,-vectvoid[i]]}
 
-A5<-read.table("B:\\Ozren\\Clanak_3_siramesine\\PLS\\ERG2_S_Siramesini_with_Siramesine_from_Gold_uskladjeno_s_ERG2_44_lit_without_NaN.txt")
+A5<-read.table("ERG2_S_Siramesini_with_Siramesine_from_Gold_uskladjeno_s_ERG2_44_lit_without_NaN.txt")
 
 Fe5<-data.matrix(A5)
 for (i in length(vectvoid):1) {
