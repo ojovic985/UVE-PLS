@@ -564,3 +564,9 @@ r2tr
 r2trCV
 RMSECV[which.min(RMSECV)]
 
+B.pred.S<-array(nrow(Fe5))
+Fe5<-Fe5[,Bvar]
+for (i in 1:nrow(Fe5)) {
+B.pred.S[i]<- Fe5[i,]%*%B+t(t(X1))}
+t(t(B.pred.S))
+
