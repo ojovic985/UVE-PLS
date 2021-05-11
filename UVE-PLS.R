@@ -59,7 +59,8 @@ Fe<-Fe[,Bvarr]
 F<-F[,Bvarr]
 Fe5<-Fe5[,Bvarr]
 
-
+meanvect<-array(ncol(Fe))
+sdvect<-array(ncol(Fe))
 for (i in 1:ncol(Fe)) {
 meanvect[i]<-mean(Fe[,i])
 sdvect[i]<-sd(Fe[,i])}
