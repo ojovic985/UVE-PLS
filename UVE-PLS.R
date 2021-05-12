@@ -305,7 +305,7 @@ RMSECV[i]<-sqrt(PRESS[i]/(nrow(Fe)))}
 ploz[h]<-RMSECV[which.min(RMSECV)]
 }
 h<-which.min(ploz)
-
+h<-18 # only due to the restriction of maximum number of descriptors (200)
 brojac<-0
 Zerd<-c()
 Bvar<-c()
@@ -569,4 +569,6 @@ Fe5<-Fe5[,Bvar]
 for (i in 1:nrow(Fe5)) {
 B.pred.S[i]<- Fe5[i,]%*%B+t(t(X1))}
 t(t(B.pred.S))
+Labels<-c('S05','S17','S10','S02','S08','S20','S14','S24','S12','S01','S29','S30','S38','S28','S25','S36','S41','S47','S45','S39','S80','S48','siramesine')
+cbind(t(t(Labels)),t(t(B.pred.S)))
 
