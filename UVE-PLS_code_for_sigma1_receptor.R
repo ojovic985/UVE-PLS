@@ -1,5 +1,5 @@
-A1<-read.table("83_ref_sigma1recref_UPDATED_from_GOLD_2019_1D_2D_3D_1836_var.txt")
-B2<-c(9.16, 7.6, 7.41, 6.99, 7.7, 7.67, 8.85, 6, 6.09, 6, 7.33, 8.71, 7.72, 8.64, 8.99, 8.22, 8.62, 8.1, 8.2, 7.86, 7.04, 8.28, 8.27, 8.24, 8.64, 7.98, 9.01, 9.07, 6.34, 7.85, 7.04, 8.36, 8.89, 7.64, 8.15, 8.97, 8.38, 8.11, 8.02, 7.94, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7.41, 8.33, 6.69, 7.2, 7.29, 7.6, 8.82, 8.22, 8.16, 8.27, 6.94, 7.7, 8.46, 7.12, 6.62, 7.44, 8.54, 6.86, 6.37, 7.34, 8.54, 8.52, 7.07, 8, 7.96, 7.57, 7.4, 7.15, 7.21, 7.46, 7.89, 8.59, 8.37, 7.66)
+A1<-read.table("Sigma1_83_ref_sigma1recref_UPDATED_from_GOLD_2019_1D_2D_3D_1836_var.txt")
+B2<-c(9.16, 7.6, 7.41, 6.99, 7.7, 7.67, 8.85, 6, 6.09, 6, 7.33, 8.71, 7.72, 8.64, 8.99, 8.22, 8.62, 8.1, 8.2, 7.86, 7.04, 8.28, 8.27, 8.24, 8.64, 7.98, 9.01, 9.07, 6.34, 7.85, 7.04, 8.36, 8.89, 7.64, 8.15, 8.97, 8.38, 8.11, 8.02, 7.94, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7.41, 8.33, 6.69, 7.2, 7.29, 7.6, 8.82, 8.22, 8.16, 8.27, 6.94, 7.7, 8.46, 7.12, 6.62, 7.44, 8.54, 6.86, 6.37, 7.34, 8.54, 8.52, 7.07, 8, 7.96, 7.57, 7.4, 7.15, 7.21, 7.46, 7.89, 8.59, 8.37, 7.66) # These are experimental pKi values for 83 literature sigma-1 receptor ligands (exactly following the labels)
 
 pon<-150
 ncomp<-20 #novo
@@ -36,9 +36,9 @@ for (i in length(vectvoid):1) {
 Fe<-Fe[,-vectvoid[i]]
 F<-F[,-vectvoid[i]]}
 
-A3<-read.table("siramesine_1836_vector_Gold.txt")
+A3<-read.table("Sigma1_siramesine_1836_vector_Gold.txt")
 
-A4<-read.table("59_S_siramesine_similar_comp_from_GOLD_1D_2D_3D_flex_1836_var.txt")
+A4<-read.table("Sigma1_59_S_siramesine_similar_comp_from_GOLD_1D_2D_3D_flex_1836_var.txt")
 
 A5<-rbind(A3,A4)
 
@@ -614,3 +614,4 @@ Labels<- read.table("Labels_of_Sigma1_59_S_siramesine_similar_comp_from_GOLD_1D_
 t(cbind(c('siramesine'),t(Labels)))
 
 cbind(t(cbind(c('siramesine'),t(Labels))),t(t(B.pred.S))) #and compare with Gold pKi results in Table 4
+
