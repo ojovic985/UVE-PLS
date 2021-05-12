@@ -36,7 +36,7 @@ for (i in length(vectvoid):1) {
 Fe<-Fe[,-vectvoid[i]]
 F<-F[,-vectvoid[i]]}
 
-A3<-read.table("Sigma1_siramesine_vector_Gold.txt")
+A3<-read.table("Sigma1_siramesine_1836_vector_Gold.txt")
 
 A4<-read.table("Sigma1_59_S_siramesine_similar_comp_from_GOLD_1D_2D_3D_flex_1836_var.txt")
 
